@@ -12,7 +12,7 @@
     <div class="container">
         <div class="navbar">
           <div class="menu">
-            <a href=""><h3 class="logo">amin<span>labs</span></h3></a>
+            <a href="/"><h3 class="logo">amin<span>labs</span></h3></a>
             <div class="hamburger-menu">
               <div class="bar"></div>
             </div>
@@ -24,19 +24,8 @@
             <header>
               <div class="overlay">
                 <div class="inner">
-                  <p>Mohammedamin Muktar</p>
-                  <h2 class="title">Full-stack Developer</h2>
-                  <p>
-                    I'm highly motivated, curious and studious. I enjoy spending my time learning new skills and maintaining my current ones.
-                  </p>
-                  <div>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-telegram"></i>
-                  </div>
-                  <a href=""><button class="btn">Read more</button></a>
+                  @yield('content')
+                  
                 </div>
               </div>
             </header>
@@ -49,17 +38,15 @@
         <div class="links">
           <ul>
             <li>
-              <a href="#" style="--i: 0.05s;">Home</a>
+              <a href="/" style="--i: 0.05s;">Home</a>
             </li>
             <li>
-              <a href="#" style="--i: 0.1s;">Projects</a>
+              <a href="/projects" style="--i: 0.1s;">Projects</a>
             </li>
             <li>
-              <a href="#" style="--i: 0.15s;">Articles</a>
+              <a href="/blog" style="--i: 0.15s;">Blog</a>
             </li>
-            <li>
-              <a href="#" style="--i: 0.3s;">Contact</a>
-            </li>
+            
             
           </ul>
         </div>
