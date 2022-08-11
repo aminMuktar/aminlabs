@@ -21,7 +21,8 @@ class PostsController extends Controller
     {
         // $post=Post::all();
         // dd($post);
-        return view('blog') -> with('posts',Post::orderBy('updated_at','DESC')->get());
+        // view('blog') -> with('posts',Post::orderBy('updated_at','DESC')->get());
+        return view('blog') -> with('posts',Post::orderBy('updated_at','DESC')->paginate(4));
         //
     }
 
