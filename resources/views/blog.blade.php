@@ -64,9 +64,9 @@
 
 
 
-<div class="p-12">
-  <div class="flex items-center space-x-1">
-    {{ $posts->links() }}  
+<div class="row">
+  <div class="col-md-12 py-8">
+    {{ $posts->links('pagination::tailwind') }}  
   </div>
 </div>
 

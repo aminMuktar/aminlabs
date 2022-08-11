@@ -13,8 +13,8 @@
         <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm text-gray-100 mr-2 mb-2 text-white">{{ date('jS M Y',strtotime($post->updated_at)) }}</span>
       </div>
         <div class="font-bold text-2xl lg:text-4xl pt-10 mb-6 underline text-white">{{ $post->title }}</div>
-        <p class=" leading-7  text-xs lg:text-base p-10 place-content-start text-white">
-          {{ $post->description }}
+        <p class=" leading-7 text-xs lg:text-base p-10 place-content-start text-white">
+            {{ $post->description }}
         </p>
       </div>
       <div class="px-6 pt-4 pb-2">
